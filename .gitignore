@@ -36,6 +36,7 @@ logs/
 .idea/
 .ipynb_checkpoints/
 *.log
+*.zip
 
 # Operating System
 Thumbs.db
