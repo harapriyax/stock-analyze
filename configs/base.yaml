@@ -1,0 +1,47 @@
+# ==============================================================================
+# AlphaPulse v2.0 - Global Base Configuration
+# ==============================================================================
+
+data:
+  lookback: 60
+  test_ratio: 0.15
+  val_ratio: 0.10
+  feature_columns:
+    - Close
+    - Volume
+    - sma_20
+    - sma_50
+    - ema_12
+    - rsi_14
+    - macd
+    - macd_signal
+    - bb_high
+    - bb_low
+    - atr_14
+    - obv
+  auto_adjust: true
+  history_years: 25
+
+training:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.001
+  patience: 6
+  grad_clip: 1.0
+  scheduler_factor: 0.5
+  scheduler_patience: 3
+  min_lr: 0.00001
+  loss_fn: "mse"
+
+inference:
+  forecast_horizon: 7
+  mc_dropout_samples: 50
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  synthetic_data_dir: "data/synthetic"
+  combined_data_dir: "data/combined"
+  models_dir: "models"
+  results_dir: "results"
+

@@ -1,0 +1,81 @@
+# ==============================================================================
+# AlphaPulse v2.0 - Target Indian Stocks Configuration (12 Top Companies)
+# ==============================================================================
+
+target_history_years: 25
+
+stocks:
+  - ticker: "RELIANCE.NS"
+    name: "Reliance Industries"
+    sector: "Energy/Conglomerate"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "HDFCBANK.NS"
+    name: "HDFC Bank"
+    sector: "Banking"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "TCS.NS"
+    name: "Tata Consultancy Services"
+    sector: "IT Services"
+    start_date: "2001-11-01"
+    needs_synthetic: true
+    synthetic_method: "gbm"
+
+  - ticker: "INFY.NS"
+    name: "Infosys"
+    sector: "IT Services"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "ICICIBANK.NS"
+    name: "ICICI Bank"
+    sector: "Banking"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "HINDUNILVR.NS"
+    name: "Hindustan Unilever"
+    sector: "FMCG"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "ITC.NS"
+    name: "ITC Ltd"
+    sector: "FMCG/Conglomerate"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "SBIN.NS"
+    name: "State Bank of India"
+    sector: "Banking (PSU)"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "BHARTIARTL.NS"
+    name: "Bharti Airtel"
+    sector: "Telecommunications"
+    start_date: "2001-11-01"
+    needs_synthetic: true
+    synthetic_method: "gbm"
+
+  - ticker: "BAJFINANCE.NS"
+    name: "Bajaj Finance"
+    sector: "NBFC / Financial Services"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "LT.NS"
+    name: "Larsen & Toubro"
+    sector: "Engineering & Infrastructure"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+
+  - ticker: "SUNPHARMA.NS"
+    name: "Sun Pharmaceuticals"
+    sector: "Pharmaceuticals"
+    start_date: "2001-11-01"
+    needs_synthetic: false
+

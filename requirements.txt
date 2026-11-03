@@ -1,9 +1,41 @@
-streamlit>=1.32.0
-yfinance>=0.2.40
-pandas>=2.2.0
-numpy>=1.26.0
-scikit-learn>=1.4.0
-torch>=2.2.0
-plotly>=5.20.0
-joblib>=1.3.0
-ta>=0.11.0
+# ============================================================================
+# AlphaPulse v2.0 — Multi-Model Stock Prediction Engine
+# Production Dependencies
+# ============================================================================
+
+# ── Core Deep Learning ──────────────────────────────────────────────────────
+torch>=2.2.0                    # PyTorch — LSTM, BiLSTM, CNN, Transformer
+torchinfo>=1.8.0                # Model summary & parameter counting
+
+# ── Numerical & Scientific ──────────────────────────────────────────────────
+numpy>=1.26.0                   # Array operations & linear algebra
+pandas>=2.2.0                   # DataFrames & time-series handling
+scipy>=1.12.0                   # Statistical distributions, signal processing
+
+# ── Machine Learning Utilities ──────────────────────────────────────────────
+scikit-learn>=1.4.0             # MinMaxScaler, metrics (RMSE, MAE, R²)
+joblib>=1.3.0                   # Efficient model serialization
+
+# ── Financial Data & Indicators ─────────────────────────────────────────────
+yfinance>=0.2.40                # Yahoo Finance multi-stock data downloader
+ta>=0.11.0                      # Technical Analysis indicators (RSI, MACD, BB, etc.)
+
+# ── Synthetic Data Generation ───────────────────────────────────────────────
+arch>=7.0.0                     # GARCH volatility models for synthetic data
+
+# ── Configuration & Logging ─────────────────────────────────────────────────
+pyyaml>=6.0.1                   # YAML config file loading
+tqdm>=4.66.0                    # Progress bars for training & data download
+
+# ── Visualization & Dashboard ───────────────────────────────────────────────
+streamlit>=1.32.0               # Interactive web dashboard
+plotly>=5.20.0                  # Professional financial charts
+
+# ── Testing & Code Quality ──────────────────────────────────────────────────
+pytest>=8.0.0                   # Unit & integration testing
+pytest-cov>=4.1.0               # Test coverage reporting
+ruff>=0.3.0                     # Fast Python linter & formatter
+
+# ── Data Format & Storage ───────────────────────────────────────────────────
+pyarrow>=15.0.0                 # Parquet file support for fast data I/O
+openpyxl>=3.1.0                 # Excel export for benchmark reports
