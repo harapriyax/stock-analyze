@@ -1,0 +1,6 @@
+model:
+  name: lstm
+  architecture: StockLSTM
+  units: 96
+  num_layers: 2
+  dropout: 0.2

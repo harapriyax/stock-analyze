@@ -16,11 +16,11 @@ dist/
 build/
 *.egg-info/
 
-# Application Data & Artifacts
-data/
-models/
-results/
-logs/
+# Application Data & Artifacts (Only root data and models)
+/data/
+/models/
+/results/
+/logs/
 *.parquet
 *.pt
 *.pkl

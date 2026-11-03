@@ -1,0 +1,6 @@
+model:
+  name: bilstm
+  architecture: StockBiLSTM
+  units: 64
+  num_layers: 2
+  dropout: 0.2

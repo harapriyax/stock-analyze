@@ -1,0 +1,8 @@
+model:
+  name: transformer_lstm
+  architecture: StockTransformerLSTM
+  d_model: 64
+  nhead: 4
+  num_encoder_layers: 2
+  lstm_units: 64
+  dropout: 0.1
